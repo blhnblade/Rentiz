@@ -1,0 +1,89 @@
+:root{
+    --container-width: 1450px;
+    --color-bcg: #121B25;
+    --color-bcg-2: #1a242f;
+    --color-white: #FFFFFF;
+    --color-dark-white: #D6D6D6;
+    --color-bright-green: #1AA090;
+    --color-gray: #858585;
+    --color-gray-2: #A9ADB1;
+    --color-dark-green: #132b32;
+    --container-small-width: 1038px;
+    --color-stick: #353F49;
+    --color-bcg-sixth-section: linear-gradient(270deg, #1A242F 0.01%, rgba(26, 36, 47, 0) 82.97%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-bcg);
+    color: var(--color-white);
+    font-family: "Manrope";
+    overflow-x: hidden;
+}
+
+/* 
+    1240
+    920
+    600
+*/
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none
+}
+
+button{
+    color: var(--color-dark-white);
+}
+
+.container{
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container__medium{
+    max-width: 1267px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container__small{
+    max-width: var(--container-small-width);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+main{
+    position: relative;
+}
+
+
+.hidden{
+    display: none;
+}
+
+
+/* Скроллбар */
+body::-webkit-scrollbar {
+    width: 12px;                                /* ширина scrollbar */
+    background-color: var(--color-bcg-2);        /* цвет дорожки */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--color-bright-green);    /* цвет плашки */
+    border-radius: 50px;                            /* закругления плашки */
+    border-style: none;                             /* padding вокруг плашки */
+}
+
+

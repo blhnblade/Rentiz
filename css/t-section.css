@@ -1,0 +1,253 @@
+.t-section{
+    padding: 160px 0px 161px;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--color-bcg-2);
+}
+@media screen and (max-width: 1400px){
+    .t-section{
+        padding: 70px 0px 130px;
+    }
+}
+@media screen and (max-width: 1240px){
+    .t-section{
+        padding: 70px 0px 100px;
+    }
+}
+@media screen and (max-width: 920px){
+    .t-section{
+        padding: 70px 0;
+    } 
+}
+
+.t-section__bcgimg{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: rotate(-6.3deg) scale(1.2);
+}
+@media screen and (max-width:920px){
+    .t-section__bcgimg{
+        object-fit: cover;
+        transform: rotate(-6.3deg) scale(2);
+    } 
+}
+
+.t-section__up{
+    position: relative;
+    z-index: 2;
+}
+
+.t-section__container{
+    margin: 0 auto;
+}
+
+.t-section__heading{
+    margin-bottom: 40px;
+}
+@media screen and (max-width: 920px){
+    .t-section__heading{
+        text-align: center;
+    }
+}
+
+.t-section__heading h2{
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+@media screen and (max-width: 1400px){
+    .t-section__heading h2{
+        font-size: 45px;
+    }
+}
+@media screen and (max-width:1240px){
+    .t-section__heading h2{
+        font-size: 43px;
+    }
+}
+@media screen and (max-width: 920px){
+    .t-section__heading h2{
+        font-size: 32px;
+    }
+}
+
+
+.t-section__slider{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 67px;
+    column-gap: 20px;
+}
+@media screen and (max-width: 1240px){
+    .t-section__slider{
+        column-gap: 30px;
+    }
+}
+@media screen and (max-width: 920px){
+    .t-section__slider{
+        flex-direction: column;
+        column-gap: initial;
+        row-gap: 50px;
+        margin-bottom: 60px;
+    }
+}
+
+
+.slide{
+}
+@media screen and (max-width: 920px){
+    .slide{
+        text-align: center;
+    }
+}
+
+.slide__img{
+    margin-bottom: 22px;
+}
+@media screen and (max-width: 920px){
+    .slide__img{
+        margin-bottom: 5px;
+    }
+}
+
+
+
+.slide__img img{
+    width: 100%;
+}
+@media screen and (max-width: 920px){
+    .slide__img img{
+        width: 85%;
+    }
+}
+
+
+.slider__heading{
+    margin-bottom: 3px;
+}
+
+.slider__heading h4{
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+@media screen and (max-width: 1240px){
+    .slider__heading h4{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 920px){
+    .slider__heading h4{
+        font-size: 21px;
+    }
+}
+
+
+.slider__paragraph{
+    margin-bottom: 16px;
+}
+@media screen and (max-width: 920px){
+    .slider__paragraph{
+        margin-bottom: 10px;
+    }
+}
+
+
+.slider__paragraph p{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-dark-white);
+}
+@media screen and (max-width: 1240px){
+    .slider__paragraph p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 920px){
+    .slider__paragraph p{
+        font-size: 12.8px;
+    }
+}
+
+
+.slider__info{
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width: 920px){
+    .slider__info{
+        margin: 0 auto;
+        max-width: 85%;
+    }
+}
+
+
+.slider__item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 4px;
+}
+
+.slider__item img{
+
+}
+@media screen and (max-width: 920px){
+    .slider__item img{
+        width: 25%;
+    }
+}
+
+
+.slider__item p{
+
+}
+@media screen and (max-width: 920px){
+    .slider__item p{
+        font-size: 12.8px;
+    }
+}
+
+
+.t-section__button-container{
+    text-align: center;
+}
+
+
+.t-section__button{
+    display: inline-block;
+    padding: 22px 42px;
+    background-color: var(--color-bright-green);
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--color-white);
+    transition-property: transform, box-shadow;
+    transition-duration: .2s;
+}
+@media screen and (max-width: 1240px){
+    .t-section__button{
+        font-size: 18px;
+        padding: 20px 35px;
+    }
+}
+@media screen and (max-width: 920px){
+    .t-section__button{
+        font-size: 16px;
+        padding: 18px 35px;
+    }
+}
+
+.t-section__button:hover{
+    transform: translateY(-4px);
+    box-shadow: 0px 2px 2px rgb(255, 255, 255);
+}
