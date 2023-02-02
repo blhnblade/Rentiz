@@ -116,6 +116,12 @@
         font-size: 14px;
     }
 }
+@media screen and (max-width: 600px){
+    .seventh-section__paragraph{
+        width: 100%;
+    }
+}
+
 
 .seventh-section__button{
     display: inline-block;

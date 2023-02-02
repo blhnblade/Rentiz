@@ -30,6 +30,12 @@
         row-gap: 40px;
     }
 }
+@media screen and (max-width: 600px){
+    .footer__container{
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+}
 
 
 .footer__logo{
@@ -62,6 +68,11 @@
     .footer__logo-container{
         grid-column-start: 1;
         grid-column-end: -1;
+    }
+}
+@media screen and (max-width: 600px){
+    .footer__logo-container{
+        width: 100%;
     }
 }
 

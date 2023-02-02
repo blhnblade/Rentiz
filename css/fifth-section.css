@@ -58,12 +58,18 @@
     }
 }
 @media screen and (max-width: 920px){
-    .fifth-section__citation {
+    .fifth-section__citation{
         font-size: 20px;
         text-align: center;
         margin-bottom: 30px;
     }
 }
+@media screen and (max-width: 600px){
+    .fifth-section__citation{
+        font-size: 17px;
+    }
+}
+
 
 .fifth-section__author h5{
     font-size: 22px;
@@ -121,6 +127,14 @@
         column-gap: 25px;
         height: 35px;
         bottom: 10px;
+    }
+}
+@media screen and (max-width: 600px){
+    .fifth-section__buttons{
+        column-gap: 18px;
+        height: 26px;
+        bottom: -19px;
+        right: 20px;
     }
 }
 
