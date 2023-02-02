@@ -24,8 +24,10 @@
     .sixth-section__container{
         flex-direction: column-reverse;
         row-gap: 50px;
+        column-gap: initial;
     }
 }
+
 
 
 .sixth-section__houses{

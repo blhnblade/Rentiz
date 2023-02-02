@@ -53,8 +53,8 @@
 @media screen and (max-width: 920px){
     .s-section__container{
         flex-direction: column;
-        justify-content: flex-start;
-        row-gap: 35px;
+        justify-content: center;
+        row-gap: 50px;
     }
 }
 
