@@ -15,16 +15,16 @@
 }
 
 .sixth-section__container{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 63px;
     align-items: center;
-    column-gap: 63px;
 }
 @media screen and (max-width: 1240px){
     .sixth-section__container{
-        flex-direction: column-reverse;
-        row-gap: 50px;
-        column-gap: initial;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        grid-row-gap: 50px;
     }
 }
 
@@ -37,6 +37,7 @@
 @media screen and (max-width: 1240px){
     .sixth-section__houses{
         justify-content: center;
+        order: 2;
     }
 }
 
