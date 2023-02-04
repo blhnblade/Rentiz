@@ -106,5 +106,40 @@ for(let i = 0; i < group.length;i++){
 
 
 
+//События на телефоне
+    //Сворачивание менюшки при листании
+document.querySelector("body").addEventListener("touchmove",function(){
+    for(let i=0; i < menu.length; i++){
+        menu[i].style.opacity = "0";
+        setTimeout(function(){menu[i].classList.add("hidden");}, 90)
+        heading[i].querySelector("img").removeAttribute("style");
+    }
+});
+        //Перехват всплытия события наверх при листании body. Оно не должно всплывать выше меню
+for(let i = 0; i < menu.length; i++){
+    menu[i].addEventListener("touchmove", function(event){
+        event.stopPropagation();
+    });
+}
+
+
+    //Сворачивание при помощи касания
+document.querySelector("body").addEventListener("touchstart", function(){
+    for(let i=0; i < menu.length; i++){
+        menu[i].style.opacity = "0";
+        setTimeout(function(){menu[i].classList.add("hidden")}, 90);
+        heading[i].querySelector("img").removeAttribute("style");
+    }
+});
+
+        //Перехват всплытия события наверх при касании. Оно не должно всплывать выше меню
+for(let i = 0; i < heading.length; i++){
+    heading[i].addEventListener("touchstart", function(event){
+        event.stopPropagation();
+    });
+}
+
+
+
 
 

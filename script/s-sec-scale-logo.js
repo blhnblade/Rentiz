@@ -1,3 +1,4 @@
+//Увеличение логотипов во 2 секции
 let logo = document.querySelectorAll(".s-section__logo");
 
 for(let i = 0; i < logo.length; i++){

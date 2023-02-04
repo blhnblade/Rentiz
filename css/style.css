@@ -11,6 +11,7 @@
     --container-small-width: 1038px;
     --color-stick: #353F49;
     --color-bcg-sixth-section: linear-gradient(270deg, #1A242F 0.01%, rgba(26, 36, 47, 0) 82.97%);
+    --color-menu-border: #132b3230;
 }
 
 
@@ -25,6 +26,7 @@ body{
     color: var(--color-white);
     font-family: "Manrope";
     overflow-x: hidden;
+    position: relative;
 }
 
 /* 

@@ -1,0 +1,148 @@
+.menu{
+    position: fixed;
+    inset: 0 42% 0 0;
+    background-color: var(--color-bright-green);
+    z-index: 999;
+    transition-property: transform;
+    transition-duration: .4s;
+    transform: translateX(-110%);
+
+}
+
+.menu__wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.menu__container{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.menu__list{
+    font-size: 35px;
+}
+@media screen and (max-width: 600px){
+    .menu__list{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 500px){
+    .menu__list{
+        font-size: 27px;
+    }
+}
+@media screen and (max-width: 400px){
+    .menu__list{
+        font-size: 25px;
+    }
+}
+
+
+.menu__item:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.menu__buttons{
+    display: none;
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+}
+/* @media screen and (max-width: 500px){
+    .menu__buttons{
+        grid-column-gap: 5px;
+    }
+} */
+@media screen and (max-width: 600px){
+    .menu__buttons{
+        display: grid;
+    }
+}
+@media screen and (max-width: 500px){
+    .menu__buttons{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 2px;
+        width: 95%;
+        bottom: 1%;
+        height: 80px;
+    }
+}
+
+.menu__login{
+    height: 100%;
+    border: 2px solid var(--color-bcg);
+    background-color: transparent;
+    font-size: 17px;
+    color: var(--color-white);
+    border-radius: 2px;
+    font-family: "Manrope";
+}
+@media screen and (max-width: 500px){
+    .menu__login{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 400px){
+    .menu__login{
+        border-radius: initial;
+    }
+}
+
+
+.menu__signup{
+    height: 100%;
+    background-color: var(--color-bcg);
+    border: 2px solid var(--color-bcg);
+    font-size: 17px;
+    color: var(--color-white);
+    border-radius: 2px;
+    font-family: "Manrope";
+}
+@media screen and (max-width: 500px){
+    .menu__signup{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 400px){
+    .menu__signup{
+        border-radius: initial;
+    }
+}
+
+
+.menu__close{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+@media screen and (max-width: 600px){
+    .menu__close{
+        width: 20px;
+        height: 20px;
+    }
+}
+@media screen and (max-width: 500px){
+    .menu__close{
+        top: 2%;
+        right: 3%;
+    }
+}
+
+.menu__close svg{
+    width: 100%;
+}
+
+.menu__close svg path{
+    fill: var(--color-white);
+}
