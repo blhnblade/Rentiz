@@ -7,6 +7,7 @@ hamburger.addEventListener("click", function(){
     menu.classList.remove("hidden");
     setTimeout(function(){menu.style.transform = "translateX(0%)";}, 1);
     hamburger.style.transform = "translateX(110%)";
+    setTimeout(function(){hamburger.style.display = "none"}, 120)
 });
 
 
